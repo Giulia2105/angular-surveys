@@ -33,7 +33,8 @@ angular.module('mwFormUtils.responseUtils', [])
             return service.$getObjectByIdMap(question.offeredAnswers, function (offeredAnswer) {
                 return {
                     id: offeredAnswer.id,
-                    value: offeredAnswer.value
+                    value: offeredAnswer.value,
+                    score: offeredAnswer.score //My changes
                 };
             });
         };
@@ -47,7 +48,8 @@ angular.module('mwFormUtils.responseUtils', [])
                     result.selectedAnswers.push(offeredAnswerById[answerId]);
                 })
             } else if (questionResponse.selectedAnswer) {
-                result.selectedAnswer = offeredAnswerById[questionResponse.selectedAnswer];
+               
+                    result.selectedAnswer = offeredAnswerById[questionResponse.selectedAnswer];
             }
             if (questionResponse.other) {
                 result.other = questionResponse.other;
@@ -378,6 +380,7 @@ angular.module('mwFormUtils.responseUtils', [])
                             }
                             cellVal += response.other;
                         }
+
                         result.push(cellVal);
                     }
                     else if (question.type == 'checkbox') {

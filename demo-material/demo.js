@@ -19,7 +19,7 @@ angular.module('app', ['ngMaterial', 'mwFormBuilder', 'mwFormViewer', 'mwFormUti
         ctrl.viewerReadOnly = false;
         ctrl.languages = ['en', 'pl', "es", 'ru'];
         ctrl.formData = null;
-        $http.get('form-data.json')
+        $http.get('form-data3.json')
             .then(function(res){
                 ctrl.formData = res.data;
             });

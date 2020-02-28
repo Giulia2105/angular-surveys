@@ -1,0 +1,65 @@
+{
+    "pages": [
+      {
+        "id": "3e85e01175c78021d0b552a72ecddd76",
+        "number": 1,
+        "name": null,
+        "description": null,
+        "pageFlow": {
+          "page": {
+            "id": "4ea50b65fff0e30f197d78ef82d5a946",
+            "number": 2
+          },
+          "label": "mwForm.pageFlow.goToPage"
+        },
+        "elements": [
+          {
+            "id": "5615172be457d703997d93b4aeebf7fb",
+            "orderNo": 1,
+            "type": "question",
+            "question": {
+              "id": "18b4f70e0523f4910eca3f7c3053ec4a",
+              "text": "YES OR NO?",
+              "type": "radio",
+              "required": true,
+              "offeredAnswers": [
+                {
+                  "id": "3b8004d4db0fa88184fb509217d21203",
+                  "orderNo": 1,
+                  "value": "YES",
+                  "pageFlow": {
+                    "page": {
+                      "id": "45422016bd62ac25c9f10b9a569c8b28",
+                      "number": 2
+                    },
+                    "label": "mwForm.pageFlow.goToPage"
+                  },
+                  "score": 4
+                },
+                {
+                  "id": "6899c4ad88aeab991f5ccdf501f8d17f",
+                  "orderNo": 2,
+                  "value": "NO",
+                  "pageFlow": {
+                    "page": {
+                      "id": "723960d518e45fed949aff73f6b2149b",
+                      "number": 2
+                    },
+                    "label": "mwForm.pageFlow.goToPage"
+                  },
+                  "score": 1
+                }
+              ],
+              "pageFlowModifier": true
+            }
+          }
+        ],
+        "namedPage": false,
+        "isFirst": true,
+        "isLast": false
+      }
+    ],
+    "name": "TEST",
+    "description": "Test decision tree",
+    "confirmationMessage": "DONE!"
+  }
