@@ -372,7 +372,7 @@ angular.module('mwFormUtils.responseUtils', [])
                         }
                         var cellVal = "";
                         if (response.selectedAnswer) {
-                            cellVal = response.selectedAnswer.value + answerDelimiter + response.selectedAnswer.score;
+                            cellVal = response.selectedAnswer.value;
                         }
 
                         if (response.other) {
@@ -391,11 +391,11 @@ angular.module('mwFormUtils.responseUtils', [])
                         }
                         var cellVal = "";
                         response.selectedAnswers.forEach(function (selectedAnswer) {
-                            console.log(selectedAnswer.score);
+                           
                             if (cellVal) {
                                 cellVal += answerDelimiter;
                             }
-                            cellVal += selectedAnswer.value + answerDelimiter + selectedAnswer.score ;
+                            cellVal += selectedAnswer.value;
 
                         });
                         if (response.other) {

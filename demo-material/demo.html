@@ -188,6 +188,17 @@
                             </pre>
                     </md-card>
                 </div>
+
+
+                <h4><a ng-click="ctrl.cgetResponseScoreRow = !ctrl.cgetResponseScoreRow" href="#getResponseScoreRow" aria-expanded="false" aria-controls="collapseExample"> getResponseScoreRow(formData, responseData)</a></h4>
+                <div ng-if="ctrl.cgetResponseScoreRow" id="getResponseScoreRow">
+                    <md-card class="md-padding">
+                            <pre>
+{{ctrl.getResponseScoreRow() | json}}
+                            </pre>
+                    </md-card>
+                </div>
+
                 </md-card>
             </md-content>
         </md-tab>

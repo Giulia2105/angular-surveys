@@ -371,7 +371,7 @@ angular.module('mwFormUtils.responseUtils', [])
                         }
                         var cellVal = "";
                         if (response.selectedAnswer) {
-                            cellVal = response.selectedAnswer.value + answerDelimiter + response.selectedAnswer.score;//My Changes
+                            cellVal = response.selectedAnswer.value;
                         }
 
                         if (response.other) {
@@ -394,7 +394,7 @@ angular.module('mwFormUtils.responseUtils', [])
                             if (cellVal) {
                                 cellVal += answerDelimiter;
                             }
-                            cellVal += selectedAnswer.value + answerDelimiter + selectedAnswer.score ;//My Changes
+                            cellVal += selectedAnswer.value;
 
                         });
                         if (response.other) {
