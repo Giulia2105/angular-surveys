@@ -15,7 +15,8 @@
                     class="form-control offered-answer-value " ng-readonly="ctrl.readOnly">
             </md-input-container>
             <!--My changes-->
-            <span class="form-inline">
+            
+            <span class="form-inline" ng-if="ctrl.question.score">
                 <md-input-container>
                     <input class="form-control offered-answer-value" type="number" ng-model="answer.score"
                         ng-readonly="ctrl.readOnly">

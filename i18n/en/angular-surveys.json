@@ -38,7 +38,8 @@
             "afterQuestionAnswer": "Go to page based on answer",
             "goToPage": "Go to page {{page.number}}",
             "goToNextPage": "Continue to next page",
-            "submitForm": "Submit form"
+            "submitForm": "Submit form",
+            "score": "Add score"
         },
         "elements":{
             "question":"Question",
